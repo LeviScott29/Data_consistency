@@ -1,1 +1,2 @@
 # Data_consistency
+Uses python to connect to both a MySQL database and a Postgres database and checks for additions to the MySQL table "sales_data" using the column "rowid" as an identifier and compares it to the length of the copy in Postgres it will tell you how many extra rows exist and if the rowid is longer in the MySQL database it copies and adds all newly added rows to the copy of the table in Postgres
